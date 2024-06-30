@@ -1,0 +1,69 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  username String  @unique
+  password String
+  role     String
+  orders   Order[]
+
+  @@map("users")
+}
+
+model MenuItem {
+  id          Int         @id @default(autoincrement())
+  name        String
+  description String
+  price       Float
+  imageUrl    String
+  category    Category    @relation(fields: [categoryId], references: [id])
+  categoryId  Int
+  orderItems  OrderItem[]
+
+  @@map("menu_items")
+}
+
+model Category {
+  id        Int        @id @default(autoincrement())
+  name      String
+  imageUrl  String
+  menuItems MenuItem[]
+
+  @@map("categories")
+}
+
+model Order {
+  id          Int         @id @default(autoincrement())
+  tableNumber Int
+  totalAmount Float
+  userId      Int
+  user        User        @relation(fields: [userId], references: [id])
+  orderItems  OrderItem[]
+  status      String      @default("PENDING") // status can be PENDING or COMPLETED
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id         Int      @id @default(autoincrement())
+  quantity   Int
+  menuItemId Int
+  orderId    Int
+  menuItem   MenuItem @relation(fields: [menuItemId], references: [id])
+  order      Order    @relation(fields: [orderId], references: [id])
+
+  @@map("order_items")
+}
