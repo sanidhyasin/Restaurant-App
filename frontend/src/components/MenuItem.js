@@ -84,8 +84,10 @@ export const MenuItem = ({ item, quantity, onQuantityChange, onAddToCart }) => {
       <div className="flex flex-row justify-between w-full px-8 py-4 overflow-hidden">
         <div className="flex flex-col justify-between ">
           <div>
-            <h1 className="text-3xl font-semibold sm:truncate">{item.name}</h1>
-            <p className="text-xl text-slate-500 line-clamp-2">
+            <h1 className="sm:text-3xl text-2xl font-semibold sm:truncate">
+              {item.name}
+            </h1>
+            <p className="sm:text-xl text-lg text-slate-500 line-clamp-2">
               {item.description}
             </p>
           </div>

@@ -53,7 +53,7 @@ const Menu = () => {
   console.log("Menu Items:", menuItems);
 
   return (
-    <div className="flex flex-col mt-14 h-full sm:w-full w-96 pb-10">
+    <div className="flex flex-col mt-14 h-full sm:w-full w-96 pb-10 px-8 sm:px-0">
       <div className="flex flex-row justify-between mb-6">
         <div className="flex flex-col">
           <h1 className=" text-xl sm:text-4xl font-medium">
@@ -92,8 +92,8 @@ const Menu = () => {
           />
         ))}
       </div>
-      <div className=" flex flex-row justify-between items-center mt-6 px-8">
-        <div className="mt-6">
+      <div className=" flex sm:flex-row flex-col justify-between items-center mt-6 sm:px-8">
+        <div className=" flex sm:flex-row flex-col mt-6 ">
           <label className=" text-xl font-semibold italic">
             Table Number :{" "}
           </label>

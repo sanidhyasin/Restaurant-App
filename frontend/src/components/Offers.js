@@ -1,14 +1,14 @@
 export const Offers = () => {
   return (
-    <div className=" flex flex-col sm:w-full w-96 items-center sm:justify-center sm:items-start">
-      <div className="flex flex-col mb-4 mr-20 sm:mr-0 ">
+    <div className=" flex flex-col sm:w-full w-96  items-center sm:justify-center sm:items-start px-4 sm:px-0">
+      <div className="flex flex-col mb-4 mr-8  sm:mr-0 ">
         <h1 className=" text-2xl sm:text-4xl font-medium">Offers</h1>
         <p className=" text-gray-700 text-base sm:text-lg">
           Explore amazing offer and earn points.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-10 items-center justify-center">
-        <div className="sm:w-72 w-[360px] h-80 flex flex-col border-2 rounded-xl">
+        <div className="sm:w-72 w-[320px] h-80 flex flex-col border-2 rounded-xl">
           <div
             className="flex basis-2/3 h-full w-full bg-cover bg-center rounded-xl"
             style={{
@@ -20,7 +20,7 @@ export const Offers = () => {
             Flat 30% on main course menu.
           </div>
         </div>
-        <div className=" sm:w-72 w-[360px] h-80 flex flex-col border-2 rounded-xl">
+        <div className=" sm:w-72 w-[320px] h-80 flex flex-col border-2 rounded-xl">
           <div
             className="flex basis-2/3 h-full w-full bg-cover bg-center rounded-xl"
             style={{
@@ -32,7 +32,7 @@ export const Offers = () => {
             Flat 40% on cocktails and other beverages.
           </div>
         </div>
-        <div className=" sm:w-72 w-[360px] h-80 flex flex-col border-2 rounded-xl">
+        <div className=" sm:w-72 w-[320px] h-80 flex flex-col border-2 rounded-xl">
           <div
             className="flex basis-2/3 h-full w-full bg-cover bg-center rounded-xl"
             style={{
@@ -44,7 +44,7 @@ export const Offers = () => {
             Get free fries with burgers.
           </div>
         </div>
-        <div className=" sm:w-72 w-[360px] h-80 flex flex-col border-2 rounded-xl">
+        <div className=" sm:w-72 w-[320px] h-80 flex flex-col border-2 rounded-xl">
           <div
             className="flex basis-2/3 h-full w-full bg-cover bg-center rounded-xl"
             style={{
