@@ -4,7 +4,7 @@ export const Offers = () => {
       <div className="flex flex-col mb-4 mr-8  sm:mr-0 ">
         <h1 className=" text-2xl sm:text-4xl font-medium">Offers</h1>
         <p className=" text-gray-700 text-base sm:text-lg">
-          Explore amazing offer and earn points.
+          Explore amazing offers and earn points.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-10 items-center justify-center">
@@ -17,7 +17,7 @@ export const Offers = () => {
             }}
           ></div>
           <div className="flex basis-1/3 h-full w-full px-4 py-6 text-xl font-medium">
-            Flat 30% on main course menu.
+            Flat 30% off on main course menu.
           </div>
         </div>
         <div className=" sm:w-72 w-[320px] h-80 flex flex-col border-2 rounded-xl">
@@ -29,7 +29,7 @@ export const Offers = () => {
             }}
           ></div>
           <div className="flex basis-1/3 h-full w-full px-4 py-6 text-xl font-medium">
-            Flat 40% on cocktails and other beverages.
+            Flat 40% off on cocktails and other beverages.
           </div>
         </div>
         <div className=" sm:w-72 w-[320px] h-80 flex flex-col border-2 rounded-xl">
@@ -53,7 +53,7 @@ export const Offers = () => {
             }}
           ></div>
           <div className="flex basis-1/3 h-full w-full px-4 py-6 text-xl font-medium">
-            Get 1 + 1 on pizza.
+            Buy 1 Get 1 fee on pizzas.
           </div>
         </div>
       </div>

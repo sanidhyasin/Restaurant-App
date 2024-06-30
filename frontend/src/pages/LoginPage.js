@@ -10,7 +10,7 @@ const LoginPage = () => (
         <p className="text-sm text-gray-400">And Indulge in food therapy</p>
         <AuthForm isLogin />
         <div className="py-2 text-sm flex justify-center">
-          <div>{"Don't have and account?"}</div>
+          <div>{"Don't have an account?"}</div>
           <Link
             className="pointer underline pl-1 cursor-pointer"
             to={"/register"}
