@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3001/api/v1/orders";
+const url = process.env.REACT_APP_BACKEND_URL;
+console.log(url);
+const API_URL = `${url}/api/v1/orders`;
 
 export const createOrder = async (token, order) => {
   const response = await axios.post(API_URL, order, {

@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3001/api/v1/menu";
+const url = process.env.REACT_APP_BACKEND_URL;
+const API_URL = `${url}/api/v1/menu`;
 
 export const getMenuItems = async (token) => {
   const response = await axios.get(`${API_URL}/items`, {

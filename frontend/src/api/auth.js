@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3001/api/v1/auth";
+const url = process.env.REACT_APP_BACKEND_URL;
+const API_URL = `${url}/api/v1/auth`;
 
 export const login = async (username, password) => {
   const response = await axios.post(`${API_URL}/login`, { username, password });
