@@ -42,7 +42,7 @@ const HomePage = () => {
         ) : (
           <div className="flex flex-col items-center justify-center sm:text-7xl text-5xl italic font-bold text-white backdrop-blur-sm w-full h-full">
             Welcome Staff
-            <p className=" sm:hidden text-2xl not-italic font-normal mt-5">
+            <p className=" sm:hidden sm:text-2xl text-xl not-italic font-normal mt-5">
               Check out incoming orders below.
             </p>
           </div>
