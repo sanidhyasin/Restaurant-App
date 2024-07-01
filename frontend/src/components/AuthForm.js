@@ -95,7 +95,7 @@ const AuthForm = ({ isLogin }) => {
                 name="role"
                 value="staff"
                 className="form-radio text-black"
-                checked={role === "customer"}
+                checked={role === "staff"}
                 onChange={(e) => setRole(e.target.value)}
               />
               <span className="ml-2">Staff</span>
