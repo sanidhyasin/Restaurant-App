@@ -49,23 +49,13 @@ const HomePage = () => {
         )}
       </div>
       {auth.role === "staff" ? (
-        <div className=" w-96 sm:w-full h-full px-6 sm:px-60 mt-10">
+        <div className=" w-96 sm:w-full h-full  mt-10">
           <StaffOrdersPage />
         </div>
       ) : (
-        // <ul>
-        //   <li>
-        //     <Link to="/menu">Menu</Link>
-        //   </li>
-        //   <li>
-        //     <Link to="/orders">Your Orders</Link>
-        //   </li>
-        // </ul>
         <div className=" px-6 sm:px-60 mt-10">
           <Offers />
           <Menu />
-          {/* <CurrentOrder />
-          <OrderHistory /> */}
         </div>
       )}
     </div>
