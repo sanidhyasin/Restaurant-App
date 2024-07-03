@@ -1,3 +1,4 @@
+````markdown
 # Restaurant App
 
 [![Hosted on Vercel](https://img.shields.io/badge/Vercel-Hosting-brightgreen)](https://restaurant-app-bay-zeta.vercel.app/)
@@ -61,7 +62,6 @@ For a detailed walkthrough of the application, watch this [video](https://drive.
    git clone https://github.com/sanidhyasin/Restaurant-App.git
    cd Restaurant-App/backend
    ```
-
 ````
 
 2. Install dependencies:
@@ -147,4 +147,3 @@ For a detailed walkthrough of the application, watch this [video](https://drive.
 - **GET /orders/history**: Get the order history for the logged-in user
 - **GET /orders/staff**: Get all pending orders for staff
 - **PUT /orders/:id/complete**: Mark an order as completed
-````
